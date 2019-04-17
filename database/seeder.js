@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const faker = require('faker');
 
-mongoose.connect('mongodb+srv://john:zillowtalk@zillow-talk-db-ujzgi.mongodb.net/test?retryWrites=true');
+mongoose.connect('mongodb://localhost:27017/zillow');
 
 // Initialize mongodb schema
 const Schema = mongoose.Schema;
