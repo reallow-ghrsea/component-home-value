@@ -1,0 +1,47 @@
+-- CREATE TABLE propertyData (
+--   id PRIMARY KEY,
+--   zestimationPrice,
+--   startPriceRange,
+--   endPriceRange,
+--   thirtyDayPriceChange,
+--   oneYearForcast,
+--   propertyLastSalePrice, 
+--   propertLastSaleDate,
+--   comparableHomePrice,
+--   marketAppreciationPrice,
+--   localSalesAvg,
+--   sellDate, 
+--   sellPrice,
+--   beds, 
+--   baths,
+--   sqft, 
+--   streetAddress, 
+--   priceSqft,
+--   saleToList,
+--   url
+-- )
+
+-- COPY propertydata (
+--   id, 
+--   zestimationPrice, 
+--   startPriceRange,
+--   endPriceRange,
+--   thirtyDayPriceChange,
+--   oneYearForcast,
+--   propertyLastSalePrice, 
+--   propertLastSaleDate,
+--   comparableHomePrice,
+--   marketAppreciationPrice,
+--   localSalesAvg,
+--   sellDate, 
+--   sellPrice,
+--   beds, 
+--   baths,
+--   sqft, 
+--   streetAddress, 
+--   priceSqft,
+--   saleToList,
+--   url
+--   ) 
+-- FROM 'propertyData_final.csv'
+-- WITH header = true AND DATETIMEFORMAT = true;

@@ -29,3 +29,5 @@ v8-compile-cache-0/
 .nvmrc
 /publid/dist/bundle.js
 .babelrc
+
+*.csv
