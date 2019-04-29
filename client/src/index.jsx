@@ -1,4 +1,4 @@
 
-import App from './components/App.jsx';
+import PropertyData from './components/App.jsx';
 
-window.App = App;
+window.App = PropertyData;

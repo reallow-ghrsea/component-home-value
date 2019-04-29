@@ -10,7 +10,7 @@ import {
   CollapsibleContent
 } from '../style.js';
 
-class App extends React.Component {
+class PropertyData extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -94,4 +94,4 @@ const Child = ({propertyData, comparableHomesData, localHomesData}) => {
   );
 };
 
-export default App; 
+export default PropertyData; 
