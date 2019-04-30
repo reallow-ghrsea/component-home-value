@@ -47,7 +47,7 @@ class ZestimateAdditionalInfo extends React.Component {
   }
 
   render () {
-    const {comparableHomePrice, marketAppreciationPrice} = this.props.propertyData;
+    const {comparablehomeprice, marketappreciationprice} = this.props.propertyData;
     const {comparableHomesData, propertyData, localHomesData} = this.props;
     return (
 
@@ -66,7 +66,7 @@ class ZestimateAdditionalInfo extends React.Component {
             <ZestDeepDiveCollapsible>
               <ZestDeepDiveButton 
                 name={'Comparable homes'} 
-                estimate={`$${comparableHomePrice}`} 
+                estimate={`$${comparablehomeprice}`} 
                 onClick={this.toggleHiddenComparableHomes.bind(this)}
               />
               {!this.state.isHiddenComparableHomes && 
@@ -77,7 +77,7 @@ class ZestimateAdditionalInfo extends React.Component {
               }
               <ZestDeepDiveButton 
                 name={'Market appreciation'} 
-                estimate={`$${marketAppreciationPrice}`} 
+                estimate={`$${marketappreciationprice}`} 
                 onClick={this.toggleHiddenMarketAppreciation.bind(this)}
               />
               {!this.state.isHiddenMarketAppreciation && 
@@ -87,7 +87,7 @@ class ZestimateAdditionalInfo extends React.Component {
               }
               <ZestDeepDiveButton 
                 name={'Local sale prices'}
-                estimate={`$${comparableHomePrice}`} 
+                estimate={`$${comparablehomeprice}`} 
                 onClick={this.toggleLocalHomes.bind(this)}
               />
               {!this.state.isHiddenLocalHomes && 
@@ -96,7 +96,7 @@ class ZestimateAdditionalInfo extends React.Component {
                 /> 
               }
               <TableContainer>
-                <Table src='https://s3-us-west-1.amazonaws.com/zillow-talk-home-component/table-data.png'></Table>
+                <Table src='https://cdn2.thecatapi.com/images/b5f.gif'></Table>
               </TableContainer>
             </ZestDeepDiveCollapsible>
           </ZestDeepDive>

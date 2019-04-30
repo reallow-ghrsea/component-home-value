@@ -21,21 +21,21 @@ var ComparableHomesItem = ({homeData}) => {
           <HomeStatus>
             <RecentlySoldIcon></RecentlySoldIcon>
             <RecentlySold> 
-              SOLD ({homeData.sellDate})
+              SOLD ({homeData.selldate})
             </RecentlySold>
           </HomeStatus>
           <Price>
-            {`$${homeData.sellPrice}`}
+            {`$${homeData.sellprice}`}
           </Price>
           <PropertyDetailedInfo>
             {`${homeData.beds} bds - ${homeData.baths} ba - 1555 sqft`}                          
           </PropertyDetailedInfo>
           <PropertyAddress>
-            {homeData.streetAddress}
+            {homeData.streetaddress}
           </PropertyAddress>
         </PropertyDetailSection>
         <PropertySqftCalculation>
-          {`$${homeData.priceSqft}`}
+          {`$${homeData.pricesqft}`}
         </PropertySqftCalculation>
       </PropertyCard>
     </div>

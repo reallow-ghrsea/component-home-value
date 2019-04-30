@@ -28,7 +28,7 @@ class App extends React.Component {
       })
       .then((data) => {
         this.setState({
-          propertyData: data.singlePropertyData
+          propertyData: data.singlePropertyData.rows[0]
         });
       });
     fetch('http://localhost:8081/api/properties')
@@ -37,8 +37,8 @@ class App extends React.Component {
       })
       .then((data) => {
         this.setState({
-          comparableHomesData: data.comparableHomesData,
-          localHomesData: data.localHomesData,
+          comparableHomesData: data.comparableHomesData.rows,
+          localHomesData: data.localHomesData.rows,
         });
       });
   }
@@ -80,13 +80,13 @@ const Child = ({propertyData, comparableHomesData, localHomesData}) => {
               Zestimate
             </ZestimateTitle>
             <ZestimateValue> 
-              {`$${propertyData[0].zestimationPrice}`}
+              {`$${propertyData.zestimationprice}`}
             </ZestimateValue>
           </ZestimateHeaderContainer>
         </HomeDetails>
       </CollapsibleContent>
       <ZestimateRow 
-        propertyData={propertyData[0]}
+        propertyData={propertyData}
         comparableHomesData={comparableHomesData}
         localHomesData={localHomesData}
       /> 
