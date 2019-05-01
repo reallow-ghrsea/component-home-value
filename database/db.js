@@ -1,9 +1,17 @@
 const { Client } = require('pg');
 
+// const client = new Client({
+//   host: "localhost",
+//   port: 5432,
+//   user: "senwl",
+//   database: "propertydata"
+// })
+
 const client = new Client({
-  host: "localhost",
+  host: "ec2-54-149-68-183.us-west-2.compute.amazonaws.com",
   port: 5432,
-  user: "senwl",
+  user: "sen",
+  password: "$sensdc",
   database: "propertydata"
 })
 
