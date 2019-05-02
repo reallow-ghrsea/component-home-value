@@ -1,5 +1,5 @@
 config:
- target: "http://localhost:8081"
+ target: "http://ec2-54-244-76-221.us-west-2.compute.amazonaws.com:8081"
  phases:
    - duration: 60
      arrivalRate: 10
