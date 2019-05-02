@@ -22,7 +22,8 @@ class App extends React.Component {
   }
 
   componentDidMount () {
-    fetch(`http://localhost:8081/api/properties/${this.props.propertyId}`)
+    // fetch(`http://localhost:8081/api/properties/${this.props.propertyId}`)
+    fetch(`http://ec2-54-244-76-221.us-west-2.compute.amazonaws.com:8081/api/properties/${this.props.propertyId}`)
       .then((response) => {
         return response.json();
       })
@@ -31,7 +32,8 @@ class App extends React.Component {
           propertyData: data.singlePropertyData.rows[0]
         });
       });
-    fetch('http://localhost:8081/api/properties')
+    // fetch('http://localhost:8081/api/properties')
+    fetch('http://ec2-54-244-76-221.us-west-2.compute.amazonaws.com:8081/api/properties')
       .then((response) => {
         return response.json();
       })
